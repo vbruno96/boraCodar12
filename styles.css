@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-front-smoothing: grayscale;
+}
+
+:root {
+  /* 1rem == 10px */
+  font-size: 62.5%;
+
+  /* Colors */
+  --white: #FFF;
+  --purple-100: #E2D6FF;
+  --purple-200: #CAB3FF;
+  --puple-900: #7C3AED;
+  --gray-100: #FBFAFF;
+  --gray-200: #E3E3E3;
+  --gray-300: #C7C7CD;
+  --gray-500: #7C7C8A;
+  --gray-700: #505059;
+  --brown-100: #756966;
+  --brown-600: #403937;
+}
+
+body {
+  font-size: 1.6rem;
+}
