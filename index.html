@@ -46,6 +46,31 @@
         <h1>Meu Kanban <ion-icon name="pencil"></ion-icon></h1>
         <img src="https:github.com/vbruno96.png" alt="" class="avatar">
       </header>
+      <form>
+        <button type="button">
+          <ion-icon name="filter"></ion-icon>
+          Filtrar
+        </button>
+        <div class="input-wrapper">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            name="query"
+            id="query"
+            placeholder="Busque por cards, assuntos ou responsáveis..."
+          >
+        </div>
+      </form>
+      <div class="content">
+        <div class="todo">
+          <h4>A fazer</h4>
+        </div>
+        <div class="working">
+          <h4>Fazendo</h4>
+        </div>
+        <div class="done">
+          <h4>Feito</h4>
+        </div>
+      </div>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
