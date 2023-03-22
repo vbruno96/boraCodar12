@@ -73,5 +73,28 @@ main {
   height: calc(100vh - .4rem);
   background: var(--gray-100);
   margin-top: .4rem;
+  padding: 4.8rem 3.2rem 0 3.2rem;
   border-top-left-radius: 32px;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header h1 {
+  color: var(--brown-600);
+  line-height: 130%;
+}
+
+main header h1 ion-icon {
+  color: var(--gray-300);
+  font-size: 2.4rem;
+}
+
+main header .avatar {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 9999px;
 }
