@@ -25,5 +25,19 @@
 }
 
 body {
+  display: flex;
+  background: var(--puple-900);
   font-size: 1.6rem;
+}
+
+aside {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+main {
+  flex: 1;
+  height: calc(100vh - .4rem);
+  background: var(--gray-100);
+  margin-top: .4rem;
+  border-top-left-radius: 32px;
 }
