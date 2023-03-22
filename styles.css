@@ -27,11 +27,45 @@
 body {
   display: flex;
   background: var(--puple-900);
+  font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
 }
 
 aside {
   padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+aside nav {
+  width: 11.4rem;
+  padding-top: 6rem;
+}
+
+aside nav .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  list-style: none;
+}
+
+aside nav .menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--purple-200);
+  font-weight: 500;
+  line-height: 125%;
+  text-decoration: none;
+  transition: all ease-in .2s;
+}
+
+aside nav .menu .menu-item ion-icon {
+  font-size: 2rem;
+}
+
+aside nav .menu .menu-item.active,
+aside nav .menu .menu-item:hover {
+  color: var(--white);
+  font-weight: 700;
 }
 
 main {
