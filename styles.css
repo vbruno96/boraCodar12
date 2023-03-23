@@ -4,6 +4,26 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-front-smoothing: grayscale;
+  scrollbar-width: auto;
+  scrollbar-color: var(--purple-200) var(--purple-100);
+}
+
+*::-webkit-scrollbar {
+  width: .8rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--purple-100);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--purple-200);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--puple-900);
 }
 
 :root {
@@ -25,5 +45,212 @@
 }
 
 body {
+  display: flex;
+  background: var(--puple-900);
+  font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
+}
+
+:focus {
+  outline: .2rem solid var(--puple-900);
+}
+
+aside {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+aside nav {
+  width: 11.4rem;
+  padding-top: 6rem;
+}
+
+aside nav .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  list-style: none;
+}
+
+aside nav .menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--purple-200);
+  font-weight: 500;
+  line-height: 125%;
+  text-decoration: none;
+  transition: all ease-in .2s;
+}
+
+aside nav .menu .menu-item ion-icon {
+  font-size: 2rem;
+}
+
+aside nav .menu .menu-item.active,
+aside nav .menu .menu-item:hover {
+  color: var(--white);
+  font-weight: 700;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-rows: max-content max-content 1fr;
+  height: calc(100vh - .4rem);
+  background: var(--gray-100);
+  margin-top: .4rem;
+  padding: 4.8rem 3.2rem 0 3.2rem;
+  border-top-left-radius: 32px;
+}
+
+main h3 {
+  color: var(--brown-600);
+  font-size: 2rem;
+  line-height: 130%;
+}
+
+main header,
+main form {
+  padding: 0 2.4rem;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header h1 {
+  color: var(--brown-600);
+  line-height: 130%;
+}
+
+main header h1 ion-icon {
+  color: var(--gray-300);
+  font-size: 2.4rem;
+}
+
+main header .avatar {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 9999px;
+}
+
+main form {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+main form button {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  background: var(--puple-900);
+  color: var(--white);
+  padding: 1.2rem 3.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  transition: all ease-in .4s;
+}
+
+main form button ion-icon {
+  font-size: 2.4rem;
+}
+
+main form button:hover {
+  background: var(--purple-200);
+  color: var(--puple-900);
+}
+
+main form .input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+main form .input-wrapper input {
+  width: 100%;
+  background: var(--white);
+  color: var(--brown-100);
+  border: .07rem solid var(--gray-200);
+  border-radius: 8px;
+  padding: 1.6rem 2.4rem 1.6rem 5.8rem;
+  line-height: 1.6rem;
+  box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
+}
+
+main form .input-wrapper input::placeholder {
+  color: var(--gray-500);
+}
+
+main form .input-wrapper ion-icon {
+  position: absolute;
+  top: 1.2rem;
+  left: 2.4rem;
+  color: var(--gray-700);
+  font-size: 2.4rem;
+}
+
+main .content {
+  display: grid;
+  gap: 4.8rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+main .content .todo,
+main .content .working,
+main .content .done {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+
+
+main .content .board-cards {
+  display: grid;
+  gap: 2.4rem;
+}
+
+main .content .board-cards .card {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  gap: 1rem;
+  background: var(--white);
+  color: var(--brown-100);
+  padding: 2.4rem;
+  border-radius: 8px;
+  line-height: 130%;
+  box-shadow: 0px 4px 16px #EAE2FD;
+}
+
+main .content .board-cards .card h5 {
+  color: var(--brown-600);
+  font-size: 1.4rem;
+}
+
+main .content .board-cards .card p {
+
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  font-size: 1.4rem;
+}
+
+main .content .board-cards .card .tags {
+  display: flex;
+  gap: .8rem;
+}
+
+main .content .board-cards .card .tags span {
+  background: var(--purple-100);
+  color: var(--puple-900);
+  padding: .4rem .8rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
 }

@@ -10,6 +10,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <aside>
+      <img src="./assets/logo.svg" alt="">
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#" class="menu-item active">
+              <ion-icon name="tablet-portrait"></ion-icon>
+              Boards
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">
+              <ion-icon name="people"></ion-icon>
+              Equipes
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">
+              <ion-icon name="document-text"></ion-icon>
+              Relatórios
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">
+              <ion-icon name="cog"></ion-icon>
+              Ajustes
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <h1>Meu Kanban <ion-icon name="pencil"></ion-icon></h1>
+        <img src="https:github.com/vbruno96.png" alt="" class="avatar">
+      </header>
+      <form>
+        <button type="button">
+          <ion-icon name="filter"></ion-icon>
+          Filtrar
+        </button>
+        <div class="input-wrapper">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            name="query"
+            id="query"
+            placeholder="Busque por cards, assuntos ou responsáveis..."
+          >
+        </div>
+      </form>
+      <div class="content">
+        <div class="todo">
+          <h3>A fazer</h3>
+          <div class="board-cards">
+            <div class="card">
+              <h5>#boraCodar um Kanban 🧑‍💻</h5>
+              <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+              <div class="tags">
+                <span>rocketseat</span>
+                <span>desafio</span>
+              </div>
+            </div>
+            <div class="card">
+              <h5>Manter a ofensiva 🔥</h5>
+              <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+              <div class="tags">
+                <span>rocketseat</span>
+              </div>
+            </div>
+            <div class="card">
+              <h5>Almoçar 🥗</h5>
+              <p>Me alimentar, aproveitando um momento de descanso para recarregar minhas energias durante o almoço</p>
+              <div class="tags">
+                <span>autocuidado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="working">
+          <h3>Fazendo</h3>
+          <div class="board-cards">
+            <div class="card">
+              <h5>Conferir o novo desafio 🚀</h5>
+              <p>Conferir o novo projeto do #boraCodar para fazê-lo da melhor maneira possível</p>
+              <div class="tags">
+                <span>rocketseat</span>
+                <span>desafio</span>
+              </div>
+            </div>
+            <div class="card">
+              <h5>Ser incrível 😎</h5>
+              <p>Sempre me lembrar de manter minha autenticidade e espalhar amor</p>
+              <div class="tags">
+                <span>autocuidado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="done">
+          <h3>Feito</h3>
+          <div class="board-cards">
+            <div class="card">
+              <h5>#boraCodar uma página de login 🧑‍💻</h5>
+              <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+              <div class="tags">
+                <span>rocketseat</span>
+                <span>desafio</span>
+              </div>
+            </div>
+            <div class="card">
+              <h5>#boraCodar uma página de clima 🧑‍💻</h5>
+              <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+              <div class="tags">
+                <span>rocketseat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
