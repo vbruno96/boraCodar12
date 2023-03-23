@@ -1,7 +1,7 @@
 import IonIcon from '@reacticons/ionicons'
-import { Sidebar } from './components/Sidebar'
-import { Avatar } from './components/Avatar'
-import { BoardContainer } from './components/BoardContainer'
+import { Sidebar } from '@/components/Sidebar'
+import { Avatar } from '@/components/Avatar'
+import { BoardContainer } from '@/components/BoardContainer'
 
 const todo = [
   {
