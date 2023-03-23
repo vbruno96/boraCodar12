@@ -44,7 +44,7 @@
   --brown-600: #403937;
 }
 
-body {
+#root {
   display: flex;
   background: var(--puple-900);
   font-family: 'Inter', sans-serif;
