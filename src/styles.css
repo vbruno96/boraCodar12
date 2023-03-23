@@ -82,7 +82,7 @@ aside nav .menu .menu-item {
   transition: all ease-in .2s;
 }
 
-aside nav .menu .menu-item ion-icon {
+aside nav .menu .menu-item span {
   font-size: 2rem;
 }
 
@@ -126,7 +126,7 @@ main header h1 {
   line-height: 130%;
 }
 
-main header h1 ion-icon {
+main header h1 span {
   color: var(--gray-300);
   font-size: 2.4rem;
 }
@@ -157,7 +157,7 @@ main form button {
   transition: all ease-in .4s;
 }
 
-main form button ion-icon {
+main form button span {
   font-size: 2.4rem;
 }
 
@@ -186,7 +186,7 @@ main form .input-wrapper input::placeholder {
   color: var(--gray-500);
 }
 
-main form .input-wrapper ion-icon {
+main form .input-wrapper span {
   position: absolute;
   top: 1.2rem;
   left: 2.4rem;
