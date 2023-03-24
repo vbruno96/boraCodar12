@@ -3,7 +3,7 @@ import { CardContainer, TagsContainer } from './styles'
 interface CardProps {
   title: string
   content: string
-  tags: [string]
+  tags: string[]
 }
 
 export function Card({ content, tags, title }: CardProps) {

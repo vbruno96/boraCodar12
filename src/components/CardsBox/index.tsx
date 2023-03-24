@@ -1,15 +1,10 @@
 import { Card } from '@/components/Card'
 import { CardsBoxContainer } from './styles'
-
-interface ICard {
-  title: string
-  content: string
-  tags: [string]
-}
+import { Todo } from '@/models/todos'
 
 interface CardsBoxProps {
   title: string
-  cards: ICard[]
+  cards: Todo[]
 }
 
 export function CardsBox({ cards, title }: CardsBoxProps) {
