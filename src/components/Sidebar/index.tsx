@@ -1,38 +1,29 @@
 import IonIcon from '@reacticons/ionicons'
-import Logo from '../../assets/logo.svg'
+import Logo from '@/assets/logo.svg'
+import { SidebarContainer } from './styles'
 
 export function Sidebar() {
   return (
-    <aside>
+    <SidebarContainer>
       <img src={Logo} alt="" />
       <nav>
-        <ul className="menu">
-          <li>
-            <a href="#" className="menu-item active">
-              <IonIcon name="tablet-portrait" />
-              Boards
-            </a>
-          </li>
-          <li>
-            <a href="#" className="menu-item">
-              <IonIcon name="people" />
-              Equipes
-            </a>
-          </li>
-          <li>
-            <a href="#" className="menu-item">
-              <IonIcon name="document-text" />
-              Relatórios
-            </a>
-          </li>
-          <li>
-            <a href="#" className="menu-item">
-              <IonIcon name="cog" />
-              Ajustes
-            </a>
-          </li>
-        </ul>
+        <a href="#" className="menu-item active">
+          <IonIcon name="tablet-portrait" />
+          Boards
+        </a>
+        <a href="#" className="menu-item">
+          <IonIcon name="people" />
+          Equipes
+        </a>
+        <a href="#" className="menu-item">
+          <IonIcon name="document-text" />
+          Relatórios
+        </a>
+        <a href="#" className="menu-item">
+          <IonIcon name="cog" />
+          Ajustes
+        </a>
       </nav>
-    </aside>
+    </SidebarContainer>
   )
 }

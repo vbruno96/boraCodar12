@@ -1,3 +1,5 @@
+import { CardContainer, TagsContainer } from './styles'
+
 interface CardProps {
   title: string
   content: string
@@ -6,14 +8,14 @@ interface CardProps {
 
 export function Card({ content, tags, title }: CardProps) {
   return (
-    <div className="card">
+    <CardContainer>
       <h5>{title}</h5>
       <p>{content}</p>
-      <div className="tags">
+      <TagsContainer>
         {tags.map((tag) => (
           <span key={tag}>{tag}</span>
         ))}
-      </div>
-    </div>
+      </TagsContainer>
+    </CardContainer>
   )
 }
