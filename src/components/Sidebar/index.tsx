@@ -1,4 +1,9 @@
-import IonIcon from '@reacticons/ionicons'
+import {
+  IoTabletPortrait,
+  IoPeople,
+  IoDocumentText,
+  IoCog,
+} from 'react-icons/io5'
 import Logo from '@/assets/logo.svg'
 import { SidebarContainer } from './styles'
 
@@ -8,19 +13,19 @@ export function Sidebar() {
       <img src={Logo} alt="" />
       <nav>
         <a href="#" className="menu-item active">
-          <IonIcon name="tablet-portrait" />
+          <IoTabletPortrait />
           Boards
         </a>
         <a href="#" className="menu-item">
-          <IonIcon name="people" />
+          <IoPeople />
           Equipes
         </a>
         <a href="#" className="menu-item">
-          <IonIcon name="document-text" />
+          <IoDocumentText />
           Relatórios
         </a>
         <a href="#" className="menu-item">
-          <IonIcon name="cog" />
+          <IoCog />
           Ajustes
         </a>
       </nav>
