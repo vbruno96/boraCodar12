@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.div<{ isDragging: boolean }>`
   display: grid;
   grid-template-rows: max-content 1fr max-content;
   gap: 1rem;
-  background: ${(props) => props.theme.white};
+  background: ${(props) =>
+    props.isDragging ? props.theme['purple-100'] : props.theme.white};
   color: ${(props) => props.theme['brown-100']};
   padding: 2.4rem;
   border-radius: 8px;
@@ -24,12 +25,13 @@ export const CardContainer = styled.div`
   }
 `
 
-export const TagsContainer = styled.div`
+export const TagsContainer = styled.div<{ isDragging: boolean }>`
   display: flex;
   gap: 0.8rem;
 
   span {
-    background: ${(props) => props.theme['purple-100']};
+    background: ${(props) =>
+      props.isDragging ? props.theme['purple-200'] : props.theme['purple-100']};
     color: ${(props) => props.theme['purple-900']};
     padding: 0.4rem 0.8rem;
     border-radius: 8px;

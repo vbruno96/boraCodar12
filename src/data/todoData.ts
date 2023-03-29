@@ -1,5 +1,7 @@
 import { Todo } from '@/models/todos'
 
+export const todoStatus = ['todo', 'working', 'done']
+
 export const todos: Todo[] = [
   {
     id: 1,
@@ -7,7 +9,7 @@ export const todos: Todo[] = [
     content:
       'Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.',
     tags: ['rocketseat', 'desafio'],
-    status: 'TODO',
+    status: 'todo',
   },
   {
     id: 2,
@@ -15,7 +17,7 @@ export const todos: Todo[] = [
     content:
       'Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva',
     tags: ['rocketseat'],
-    status: 'TODO',
+    status: 'todo',
   },
   {
     id: 3,
@@ -23,14 +25,14 @@ export const todos: Todo[] = [
     content:
       'Conferir o novo projeto do #boraCodar para fazê-lo da melhor maneira possível',
     tags: ['rocketseat', 'desafio'],
-    status: 'WORKING',
+    status: 'working',
   },
   {
     id: 4,
     title: 'Ser incrível 😎',
     content: 'Sempre me lembrar de manter minha autenticidade e espalhar amor',
     tags: ['autocuidado'],
-    status: 'WORKING',
+    status: 'working',
   },
   {
     id: 5,
@@ -38,7 +40,7 @@ export const todos: Todo[] = [
     content:
       'Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva',
     tags: ['rocketseat', 'desafio'],
-    status: 'DONE',
+    status: 'done',
   },
   {
     id: 6,
@@ -46,6 +48,6 @@ export const todos: Todo[] = [
     content:
       'Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva',
     tags: ['rocketseat', 'desafio'],
-    status: 'DONE',
+    status: 'done',
   },
 ]
