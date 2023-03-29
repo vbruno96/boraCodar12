@@ -12,7 +12,7 @@ import {
 } from '@/styles/app'
 import { BoardContainer } from './components/BoardContainer'
 
-function App() {
+export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Sidebar />
@@ -43,5 +43,3 @@ function App() {
     </ThemeProvider>
   )
 }
-
-export default App
