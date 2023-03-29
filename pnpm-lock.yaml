@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@reacticons/ionicons': 7.0.1
   '@rocketseat/eslint-config': 1.2.0
   '@types/react': 18.0.28
   '@types/react-beautiful-dnd': ^13.1.4
@@ -12,17 +11,17 @@ specifiers:
   react: 18.2.0
   react-beautiful-dnd: ^13.1.1
   react-dom: 18.2.0
+  react-icons: ^4.8.0
   styled-components: 5.3.9
   typescript: 4.9.3
   vite: 4.2.0
   vite-tsconfig-paths: 4.0.7
 
 dependencies:
-  '@reacticons/ionicons': 7.0.1
-  '@types/styled-components': 5.1.26
   react: 18.2.0
   react-beautiful-dnd: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.8.0_react@18.2.0
   styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
@@ -30,6 +29,7 @@ devDependencies:
   '@types/react': 18.0.28
   '@types/react-beautiful-dnd': 13.1.4
   '@types/react-dom': 18.0.11
+  '@types/styled-components': 5.1.26
   '@vitejs/plugin-react': 3.1.0_vite@4.2.0
   eslint: 8.36.0
   typescript: 4.9.3
@@ -610,10 +610,6 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
     dev: true
-
-  /@reacticons/ionicons/7.0.1:
-    resolution: {integrity: sha512-mCoK98i48z4tS0Op0OUVqvG0nzsu3MEW7AreEWR3kVyoUBkFa/1aqT3iESf6HVIp1uUPkfGtnBFAWFZfqQqvAA==}
-    dev: false
 
   /@rocketseat/eslint-config/1.2.0_ksm65cmkhueqbr4niscev4pjv4:
     resolution: {integrity: sha512-Ew1D0DGR2Rf/4nL7t4R2nmVwjnJ9Bxaq1jsW2b4YLC5GRei4bbISzOoPHFuqDbRcy66PxNcHc3iLb0ahPvd36A==}
@@ -2491,6 +2487,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.8.0_react@18.2.0:
+    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:

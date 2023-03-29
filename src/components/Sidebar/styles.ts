@@ -20,7 +20,7 @@ export const SidebarContainer = styled.aside`
       text-decoration: none;
       transition: all ease-in 0.2s;
 
-      span {
+      svg {
         font-size: 2rem;
       }
 

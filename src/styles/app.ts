@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
     color: ${(props) => props.theme['brown-600']};
     line-height: 130%;
 
-    span {
+    svg {
       color: ${(props) => props.theme['gray-300']};
       font-size: 2.4rem;
     }
@@ -48,7 +48,7 @@ export const FormContainer = styled.form`
     line-height: 2.4rem;
     transition: all ease-in 0.4s;
 
-    span {
+    svg {
       font-size: 2.4rem;
     }
 
@@ -78,7 +78,7 @@ export const InputWrapper = styled.div`
     }
   }
 
-  span {
+  svg {
     position: absolute;
     top: 1.2rem;
     left: 2.4rem;
