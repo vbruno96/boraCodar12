@@ -11,5 +11,5 @@ export function getTodosByStatus(todos: Todo[], status: string[]): Todos {
       [statusKey]: todoByStatus(todos, statusKey),
     }),
     {},
-  )
+  ) as Todos
 }

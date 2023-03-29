@@ -4,13 +4,14 @@ import { CardContainer, TagsContainer } from './styles'
 interface CardProps {
   index: number
   title: string
+  cardId: string
   content: string
   tags: string[]
 }
 
-export function Card({ index, content, tags, title }: CardProps) {
+export function Card({ index, content, cardId, tags, title }: CardProps) {
   return (
-    <Draggable draggableId={title} index={index}>
+    <Draggable draggableId={cardId} index={index}>
       {(provided, snapshot) => (
         <CardContainer
           ref={provided.innerRef}

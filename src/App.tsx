@@ -1,4 +1,4 @@
-import IonIcon from '@reacticons/ionicons'
+import { IoFilter, IoSearchOutline, IoPencil } from 'react-icons/io5'
 import { ThemeProvider } from 'styled-components'
 import { Sidebar } from '@/components/Sidebar'
 import { Avatar } from '@/components/Avatar'
@@ -12,24 +12,24 @@ import {
 } from '@/styles/app'
 import { BoardContainer } from './components/BoardContainer'
 
-function App() {
+export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Sidebar />
       <AppContainer>
         <HeaderContainer>
           <h1>
-            Meu Kanban <IonIcon name="pencil" />
+            Meu Kanban <IoPencil />
           </h1>
           <Avatar imageUrl="https://github.com/vbruno96.png" />
         </HeaderContainer>
         <FormContainer>
           <button type="button">
-            <IonIcon name="filter" />
+            <IoFilter />
             Filtrar
           </button>
           <InputWrapper>
-            <IonIcon name="search-outline" />
+            <IoSearchOutline />
             <input
               name="query"
               id="query"
@@ -43,5 +43,3 @@ function App() {
     </ThemeProvider>
   )
 }
-
-export default App
