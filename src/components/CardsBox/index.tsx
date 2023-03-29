@@ -18,7 +18,8 @@ export function CardsBox({ cards, boxId, title }: CardsBoxProps) {
           <div ref={provided.innerRef} {...provided.droppableProps}>
             {cards.map((card, index) => (
               <Card
-                key={card.title}
+                key={card.id}
+                cardId={card.id.toString()}
                 content={card.content}
                 tags={card.tags}
                 title={card.title}
